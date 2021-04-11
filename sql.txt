@@ -1,0 +1,16 @@
+#Basketball Team
+CREATE TABLE teams(
+	id INT NOT NULL AUTO_INCREMENT,
+	team_name VARCHAR(50) NOT NULL,
+    team_city VARCHAR(20) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE players(
+	id INT NOT NULL AUTO_INCREMENT,
+    team_id INT NOT NULL,
+    player_name VARCHAR(50) NOT NULL,
+    player_number INT NOT NULL,
+    player_position CHAR(2) NOT NULL,
+    PRIMARY KEY (id)
+);
